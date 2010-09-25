@@ -1,0 +1,29 @@
+= Using Git =
+
+== Getting this repository to your own folder ==
+
+In bash, perform the following scripts in the folder for which the game project should be pulled into.  The '$' sign 
+simply means whatever the terminal says, you only type what is after that mark.
+
+* $ mkdir 'racing-asu'
+* $ cd 'racing-asu'
+* $ git init
+* $ git add remote origin git@github.com:travis134/racing-asu.git
+* Note: If you are using a branch, change the location of the repository to its corresponding link on github.
+* $ git pull origin master
+
+== Using git to push to the repository ==
+
+In git there are 3 steps to pushing your changes to the repository.
+
+* Adding files to be commited (sometimes you don't want to upload all of your changes, this allows for cherrypicking).
+* Commiting files (this locally saves changes, and creates a message to let others know what you did)
+* Pushing files to the repository (this saves all your local commits to the repository, allowing others to access your contributions.
+
+How to push:
+
+* $ git add -A
+* Note: -A will save ALL of your changes, including deleted directories, new files, etc.  If you want to manually select items, simply leave off the -A and put in files' paths.
+* $ git commit -m 'This is a commit message'
+* Note: Don't forget to change the commit message to something that tells what you did.
+* $ git push origin master
