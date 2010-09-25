@@ -12,6 +12,8 @@ simply means whatever the terminal says, you only type what is after that mark.
 * Note: If you are using a branch, change the location of the repository to its corresponding link on github.
 * $ git pull origin master
 
+Don't forget that once you've got your git directory set up, you only have to use the last command inside the directory to get any changes that have been made by others.
+
 == Using git to push to the repository ==
 
 In git there are 3 steps to pushing your changes to the repository.
