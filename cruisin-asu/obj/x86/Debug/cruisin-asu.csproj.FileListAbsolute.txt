@@ -1,7 +1,0 @@
-C:\Users\Travis\Documents\Projects\asu-racing\cruisin-asu\bin\x86\Debug\cruisin-asu.exe
-C:\Users\Travis\Documents\Projects\asu-racing\cruisin-asu\bin\x86\Debug\cruisin-asu.pdb
-C:\Users\Travis\Documents\Projects\asu-racing\cruisin-asu\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Travis\Documents\Projects\asu-racing\cruisin-asu\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Travis\Documents\Projects\asu-racing\cruisin-asu\obj\x86\Debug\cruisin-asu.exe
-C:\Users\Travis\Documents\Projects\asu-racing\cruisin-asu\obj\x86\Debug\cruisin-asu.pdb
-C:\Users\Travis\Documents\Projects\asu-racing\cruisin-asu\bin\x86\Debug\Content\player.xnb
