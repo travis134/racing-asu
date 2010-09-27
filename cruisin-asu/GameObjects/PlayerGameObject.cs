@@ -13,48 +13,33 @@ using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
 using cruisin_asu.Helpers;
 
-namespace cruisin_asu.GameObjects
-{
-    class PlayerGameObject : MovingGameObject
-    {
+namespace cruisin_asu.GameObjects {
+    class PlayerGameObject: MovingGameObject {
         private Controller controller;
 
-        public PlayerGameObject(String texturePath, Vector2 position, Controller controller)
-            : base(texturePath, position)
-        {
+        public PlayerGameObject(String texturePath, Vector2 position, Controller controller): base(texturePath, position) {
             this.controller = controller;
             this.speed = 1;
         }
 
-        public override void Update(GameTime gameTime)
-        {
+        public override void Update(GameTime gameTime) {
 
-            if (controller.controlState[Controls.Up])
-            {
+            if (controller.controlState[Controls.Up]) {
                 velocity.Y = -1;
-            }
-            else if (controller.controlState[Controls.Down])
-            {
+            } else if (controller.controlState[Controls.Down]) {
                 velocity.Y = 1;
-            }
-            else
-            {
+            } else {
                 velocity.Y = 0;
             }
 
-            if (controller.controlState[Controls.Left])
-            {
+            if (controller.controlState[Controls.Left]) {
                 velocity.X = -1;
-            }
-            else if (controller.controlState[Controls.Right])
-            {
+            } else if (controller.controlState[Controls.Right]) {
                 velocity.X = 1;
-            }
-            else
-            {
+            } else {
                 velocity.X = 0;
             }
-            
+
 
             base.Update(gameTime);
         }

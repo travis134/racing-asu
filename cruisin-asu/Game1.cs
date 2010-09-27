@@ -13,11 +13,9 @@ using Microsoft.Xna.Framework.Storage;
 using cruisin_asu.Helpers;
 using cruisin_asu.GameObjects;
 
-namespace cruisin_asu
-{
+namespace cruisin_asu {
 
-    public class Game1 : Microsoft.Xna.Framework.Game
-    {
+    public class Game1: Microsoft.Xna.Framework.Game {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Controller controller;
@@ -26,72 +24,46 @@ namespace cruisin_asu
         GameObject realMap;
 
 
-        public Game1()
-        {
+        public Game1() {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
 
-        protected override void Initialize()
-        {
+        protected override void Initialize() {
             #if !XBOX
                 controller = new Controller(ControllerType.PC);
             #else
                 controller = new Controller(ControllerType.Xbox360);
             #endif
 
-            player = new PlayerGameObject(
-                "player",
-                new Vector2(
-                        0,0
-                    ),
-                controller
-                );
+            player = new PlayerGameObject("player", new Vector2(0, 0),controller);
             player.zindex = 0.9f;
 
-            map = new GameObject(
-                "map",
-                new Vector2(
-                        graphics.GraphicsDevice.Viewport.Width / 2,
-                        graphics.GraphicsDevice.Viewport.Height / 2
-                    )
-                );
+            map = new GameObject("map", new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2));
             map.zindex = 0.2f;
 
-            realMap = new GameObject(
-                "realmap",
-                new Vector2(
-                        graphics.GraphicsDevice.Viewport.Width / 2,
-                        graphics.GraphicsDevice.Viewport.Height / 2
-                    )
-                );
+            realMap = new GameObject("realmap", new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2));
             map.zindex = 0.4f;
 
             base.Initialize();
         }
 
-        protected override void LoadContent()
-        {
+        protected override void LoadContent() {
             player.LoadContent(Content);
             map.LoadContent(Content);
             realMap.LoadContent(Content);
             spriteBatch = new SpriteBatch(GraphicsDevice);
         }
 
-        protected override void UnloadContent()
-        {
-            
+        protected override void UnloadContent() {
+
         }
 
-        protected override void Update(GameTime gameTime)
-        {
+        protected override void Update(GameTime gameTime) {
 
-            if (GameObject.IntersectPixels(player.futureRectangle, player.textureData, map.rectangle, map.textureData))
-            {
+            if (GameObject.IntersectPixels(player.futureRectangle, player.textureData, map.rectangle, map.textureData)) {
                 player.moving = false;
-            }
-            else
-            {
+            } else {
                 player.moving = true;
             }
 
@@ -100,18 +72,16 @@ namespace cruisin_asu
             map.Update(gameTime);
             realMap.Update(gameTime);
 
-            if (controller.controlState[Controls.Exit])
-            {
+            if (controller.controlState[Controls.Exit]) {
                 this.Exit();
             }
 
             base.Update(gameTime);
         }
 
-        protected override void Draw(GameTime gameTime)
-        {
+        protected override void Draw(GameTime gameTime) {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-            spriteBatch.Begin(SpriteBlendMode.AlphaBlend,SpriteSortMode.FrontToBack, SaveStateMode.None);
+            spriteBatch.Begin(SpriteBlendMode.AlphaBlend, SpriteSortMode.FrontToBack, SaveStateMode.None);
             realMap.Draw(spriteBatch);
             player.Draw(spriteBatch);
             spriteBatch.End();

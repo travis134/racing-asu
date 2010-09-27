@@ -12,10 +12,9 @@ using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
 
-namespace cruisin_asu.Helpers
-{
-    class Controller
-    {
+namespace cruisin_asu.Helpers {
+
+    class Controller {
 
         private ControllerType controllerType;
         public Dictionary<Controls, bool> controlState;
@@ -24,12 +23,10 @@ namespace cruisin_asu.Helpers
         private KeyboardState keyboardState;
         private GamePadState gamePadState;
 
-        public Controller(ControllerType controllerType)
-        {
+        public Controller(ControllerType controllerType) {
             this.controllerType = controllerType;
 
-            switch (controllerType)
-            {
+            switch (controllerType) {
                 case ControllerType.PC:
                     this.keyboardControlScheme = new Dictionary<Keys, Controls>();
                     this.keyboardControlScheme.Add(Keys.Up, Controls.Up);
@@ -53,15 +50,13 @@ namespace cruisin_asu.Helpers
             this.controlState.Add(Controls.Down, false);
             this.controlState.Add(Controls.Left, false);
             this.controlState.Add(Controls.Right, false);
-            this.controlState.Add(Controls.Exit, false); 
+            this.controlState.Add(Controls.Exit, false);
         }
 
-        public void Update(GameTime gameTime)
-        {
-            switch (controllerType)
-            {
+        public void Update(GameTime gameTime) {
+            switch (controllerType) {
                 case ControllerType.PC:
-                    this.KeyboardUpdate();                    
+                    this.KeyboardUpdate();
                     break;
                 case ControllerType.SilverLight:
                     throw new NotImplementedException();
@@ -73,48 +68,34 @@ namespace cruisin_asu.Helpers
             }
         }
 
-        private void KeyboardUpdate()
-        {
+        private void KeyboardUpdate() {
             keyboardState = Keyboard.GetState();
-            foreach (Keys key in keyboardControlScheme.Keys)
-            {
-                if (keyboardState.IsKeyDown(key))
-                {
+            foreach (Keys key in keyboardControlScheme.Keys) {
+                if (keyboardState.IsKeyDown(key)) {
                     Controls control = keyboardControlScheme[key];
-                    if (controlState.ContainsKey(control))
-                    {
+                    if (controlState.ContainsKey(control)) {
                         controlState[control] = true;
                     }
-                }
-                else if (keyboardState.IsKeyUp(key))
-                {
+                } else if (keyboardState.IsKeyUp(key)) {
                     Controls control = keyboardControlScheme[key];
-                    if (controlState.ContainsKey(control))
-                    {
+                    if (controlState.ContainsKey(control)) {
                         controlState[control] = false;
                     }
                 }
             }
         }
 
-        private void Xbox360Update()
-        {
+        private void Xbox360Update() {
             gamePadState = GamePad.GetState(PlayerIndex.One);
-            foreach (Buttons button in xbox360ControlScheme.Keys)
-            {
-                if (gamePadState.IsButtonDown(button))
-                {
+            foreach (Buttons button in xbox360ControlScheme.Keys) {
+                if (gamePadState.IsButtonDown(button)) {
                     Controls control = xbox360ControlScheme[button];
-                    if (controlState.ContainsKey(control))
-                    {
+                    if (controlState.ContainsKey(control)) {
                         controlState[control] = true;
                     }
-                }
-                else if (gamePadState.IsButtonUp(button))
-                {
+                } else if (gamePadState.IsButtonUp(button)) {
                     Controls control = xbox360ControlScheme[button];
-                    if (controlState.ContainsKey(control))
-                    {
+                    if (controlState.ContainsKey(control)) {
                         controlState[control] = false;
                     }
                 }
