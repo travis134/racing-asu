@@ -10,6 +10,7 @@ namespace cruisin_asu.Helpers
         Up,
         Down,
         Left,
-        Right
+        Right,
+        Exit
     };
 }

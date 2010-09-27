@@ -20,18 +20,34 @@ namespace cruisin_asu.Helpers
         private ControllerType controllerType;
         public Dictionary<Controls, bool> controlState;
         public Dictionary<Keys, Controls> keyboardControlScheme;
+        public Dictionary<Buttons, Controls> xbox360ControlScheme;
         private KeyboardState keyboardState;
+        private GamePadState gamePadState;
 
         public Controller(ControllerType controllerType)
         {
             this.controllerType = controllerType;
 
-            this.keyboardControlScheme = new Dictionary<Keys, Controls>();
-            this.keyboardControlScheme.Add(Keys.Up, Controls.Up);
-            this.keyboardControlScheme.Add(Keys.Down, Controls.Down);
-            this.keyboardControlScheme.Add(Keys.Left, Controls.Left);
-            this.keyboardControlScheme.Add(Keys.Right, Controls.Right);
-            
+            switch (controllerType)
+            {
+                case ControllerType.PC:
+                    this.keyboardControlScheme = new Dictionary<Keys, Controls>();
+                    this.keyboardControlScheme.Add(Keys.Up, Controls.Up);
+                    this.keyboardControlScheme.Add(Keys.Down, Controls.Down);
+                    this.keyboardControlScheme.Add(Keys.Left, Controls.Left);
+                    this.keyboardControlScheme.Add(Keys.Right, Controls.Right);
+                    this.keyboardControlScheme.Add(Keys.Escape, Controls.Exit);
+                    break;
+                case ControllerType.Xbox360:
+                    this.xbox360ControlScheme = new Dictionary<Buttons, Controls>();
+                    this.xbox360ControlScheme.Add(Buttons.DPadUp, Controls.Up);
+                    this.xbox360ControlScheme.Add(Buttons.DPadDown, Controls.Down);
+                    this.xbox360ControlScheme.Add(Buttons.DPadLeft, Controls.Left);
+                    this.xbox360ControlScheme.Add(Buttons.DPadRight, Controls.Right);
+                    this.xbox360ControlScheme.Add(Buttons.Back, Controls.Exit);
+                    break;
+            }
+
             this.controlState = new Dictionary<Controls, bool>();
             this.controlState.Add(Controls.Up, false);
             this.controlState.Add(Controls.Down, false);
@@ -51,8 +67,7 @@ namespace cruisin_asu.Helpers
                     //TODO: Implement Silverlight specific controls
                     break;
                 case ControllerType.Xbox360:
-                    throw new NotImplementedException();
-                    //TODO: Implement Xbox360 specific controls
+                    this.Xbox360Update();
                     break;
             }
         }
@@ -60,9 +75,9 @@ namespace cruisin_asu.Helpers
         private void KeyboardUpdate()
         {
             keyboardState = Keyboard.GetState();
-            foreach(Keys key in keyboardState.GetPressedKeys())
+            foreach (Keys key in keyboardControlScheme.Keys)
             {
-                if(keyboardControlScheme.ContainsKey(key))
+                if (keyboardState.IsKeyDown(key))
                 {
                     Controls control = keyboardControlScheme[key];
                     if (controlState.ContainsKey(control))
@@ -70,12 +85,33 @@ namespace cruisin_asu.Helpers
                         controlState[control] = true;
                     }
                 }
-            }
-            foreach(Keys key in keyboardControlScheme.Keys)
-            {
-                if (keyboardState.IsKeyUp(key))
+                else if (keyboardState.IsKeyUp(key))
                 {
                     Controls control = keyboardControlScheme[key];
+                    if (controlState.ContainsKey(control))
+                    {
+                        controlState[control] = false;
+                    }
+                }
+            }
+        }
+
+        private void Xbox360Update()
+        {
+            gamePadState = GamePad.GetState(PlayerIndex.One);
+            foreach (Buttons button in xbox360ControlScheme.Keys)
+            {
+                if (gamePadState.IsButtonDown(button))
+                {
+                    Controls control = xbox360ControlScheme[button];
+                    if (controlState.ContainsKey(control))
+                    {
+                        controlState[control] = true;
+                    }
+                }
+                else if (gamePadState.IsButtonUp(button))
+                {
+                    Controls control = xbox360ControlScheme[button];
                     if (controlState.ContainsKey(control))
                     {
                         controlState[control] = false;

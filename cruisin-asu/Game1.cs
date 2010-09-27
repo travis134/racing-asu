@@ -32,7 +32,11 @@ namespace cruisin_asu
 
         protected override void Initialize()
         {
-            controller = new Controller(ControllerType.PC);
+            #if !XBOX
+                controller = new Controller(ControllerType.PC);
+            #else
+                controller = new Controller(ControllerType.Xbox360);
+            #endif
 
             player = new PlayerGameObject(
                 "player",
