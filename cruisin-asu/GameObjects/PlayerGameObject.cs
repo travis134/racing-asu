@@ -23,7 +23,7 @@ namespace cruisin_asu.GameObjects
             : base(texturePath, position)
         {
             this.controller = controller;
-            this.speed = 5;
+            this.speed = 1;
         }
 
         public override void Update(GameTime gameTime)
