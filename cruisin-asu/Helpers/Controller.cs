@@ -52,7 +52,8 @@ namespace cruisin_asu.Helpers
             this.controlState.Add(Controls.Up, false);
             this.controlState.Add(Controls.Down, false);
             this.controlState.Add(Controls.Left, false);
-            this.controlState.Add(Controls.Right, false);  
+            this.controlState.Add(Controls.Right, false);
+            this.controlState.Add(Controls.Exit, false); 
         }
 
         public void Update(GameTime gameTime)

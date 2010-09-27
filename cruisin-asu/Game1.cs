@@ -85,6 +85,7 @@ namespace cruisin_asu
 
         protected override void Update(GameTime gameTime)
         {
+
             if (GameObject.IntersectPixels(player.futureRectangle, player.textureData, map.rectangle, map.textureData))
             {
                 player.moving = false;
@@ -98,6 +99,12 @@ namespace cruisin_asu
             player.Update(gameTime);
             map.Update(gameTime);
             realMap.Update(gameTime);
+
+            if (controller.controlState[Controls.Exit])
+            {
+                this.Exit();
+            }
+
             base.Update(gameTime);
         }
 
