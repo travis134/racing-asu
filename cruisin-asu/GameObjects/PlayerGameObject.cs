@@ -42,7 +42,7 @@ namespace cruisin_asu.GameObjects {
 
             if (controller.controlState[Controls.SpeedUp])
             {
-                speed = 5;
+                speed = 3;
             }
             else
             {
