@@ -1,0 +1,9 @@
+C:\Users\Public\Documents\cruisin-asu\cruisin-asu\bin\x86\Debug\Content\player.xnb
+C:\Users\Public\Documents\cruisin-asu\cruisin-asu\bin\x86\Debug\Content\map.xnb
+C:\Users\Public\Documents\cruisin-asu\cruisin-asu\bin\x86\Debug\Content\realmap.xnb
+C:\Users\Public\Documents\cruisin-asu\cruisin-asu\bin\x86\Debug\cruisin-asu.exe
+C:\Users\Public\Documents\cruisin-asu\cruisin-asu\bin\x86\Debug\cruisin-asu.pdb
+C:\Users\Public\Documents\cruisin-asu\cruisin-asu\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Documents\cruisin-asu\cruisin-asu\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Public\Documents\cruisin-asu\cruisin-asu\obj\x86\Debug\cruisin-asu.exe
+C:\Users\Public\Documents\cruisin-asu\cruisin-asu\obj\x86\Debug\cruisin-asu.pdb

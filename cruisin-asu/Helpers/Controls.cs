@@ -9,6 +9,7 @@ namespace cruisin_asu.Helpers {
         Down,
         Left,
         Right,
-        Exit
+        Exit,
+        SpeedUp
     };
 }

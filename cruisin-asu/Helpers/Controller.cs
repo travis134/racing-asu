@@ -34,6 +34,7 @@ namespace cruisin_asu.Helpers {
                     this.keyboardControlScheme.Add(Keys.Left, Controls.Left);
                     this.keyboardControlScheme.Add(Keys.Right, Controls.Right);
                     this.keyboardControlScheme.Add(Keys.Escape, Controls.Exit);
+                    this.keyboardControlScheme.Add(Keys.Space, Controls.SpeedUp);
                     break;
                 case ControllerType.Xbox360:
                     this.xbox360ControlScheme = new Dictionary<Buttons, Controls>();
@@ -51,6 +52,7 @@ namespace cruisin_asu.Helpers {
             this.controlState.Add(Controls.Left, false);
             this.controlState.Add(Controls.Right, false);
             this.controlState.Add(Controls.Exit, false);
+            this.controlState.Add(Controls.SpeedUp, false);
         }
 
         public void Update(GameTime gameTime) {

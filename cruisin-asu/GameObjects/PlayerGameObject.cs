@@ -40,6 +40,14 @@ namespace cruisin_asu.GameObjects {
                 velocity.X = 0;
             }
 
+            if (controller.controlState[Controls.SpeedUp])
+            {
+                speed = 5;
+            }
+            else
+            {
+                speed = 1;
+            }
 
             base.Update(gameTime);
         }
