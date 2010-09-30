@@ -6,6 +6,7 @@ using System.Text;
 namespace cruisin_asu.Helpers {
     public enum ControllerType {
         PC,
+        PC2,
         SilverLight,
         Xbox360
     }

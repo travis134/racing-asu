@@ -18,8 +18,10 @@ namespace cruisin_asu {
     public class Game1: Microsoft.Xna.Framework.Game {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Controller controller2;
         Controller controller;
         PlayerGameObject player;
+        PlayerGameObject player2;
         GameObject map;
         GameObject realMap;
 
@@ -34,10 +36,20 @@ namespace cruisin_asu {
                 controller = new Controller(ControllerType.PC);
             #else
                 controller = new Controller(ControllerType.Xbox360);
-            #endif
+            #endif 
+
+#if !XBOX
+                controller2 = new Controller(ControllerType.PC2);
+#else
+                controller2 = new Controller(ControllerType.Xbox360);
+#endif 
 
             player = new PlayerGameObject("player", new Vector2(0, 0),controller);
             player.zindex = 0.9f;
+
+            player2 = new PlayerGameObject("player", new Vector2(120, 120), controller2);
+            player2.zindex = 0.9f;
+            
 
             map = new GameObject("map", new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2));
             map.zindex = 0.2f;
@@ -49,6 +61,7 @@ namespace cruisin_asu {
         }
 
         protected override void LoadContent() {
+            player2.LoadContent(Content);
             player.LoadContent(Content);
             map.LoadContent(Content);
             realMap.LoadContent(Content);
@@ -69,6 +82,20 @@ namespace cruisin_asu {
 
             controller.Update(gameTime);
             player.Update(gameTime);
+            if (GameObject.IntersectPixels(player2.futureRectangle, player2.textureData, map.rectangle, map.textureData))
+            {
+                player2.moving = false;
+            }
+            else
+            {
+                player2.moving = true;
+            }
+
+            controller2.Update(gameTime);
+            player2.Update(gameTime);
+
+
+
             map.Update(gameTime);
             realMap.Update(gameTime);
 
@@ -83,6 +110,7 @@ namespace cruisin_asu {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin(SpriteBlendMode.AlphaBlend, SpriteSortMode.FrontToBack, SaveStateMode.None);
             realMap.Draw(spriteBatch);
+            player2.Draw(spriteBatch);
             player.Draw(spriteBatch);
             spriteBatch.End();
             base.Draw(gameTime);

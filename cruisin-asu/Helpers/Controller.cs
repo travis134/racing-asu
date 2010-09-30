@@ -36,6 +36,15 @@ namespace cruisin_asu.Helpers {
                     this.keyboardControlScheme.Add(Keys.Escape, Controls.Exit);
                     this.keyboardControlScheme.Add(Keys.Space, Controls.SpeedUp);
                     break;
+                case ControllerType.PC2:
+                    this.keyboardControlScheme = new Dictionary<Keys, Controls>();
+                    this.keyboardControlScheme.Add(Keys.W, Controls.Up);
+                    this.keyboardControlScheme.Add(Keys.S, Controls.Down);
+                    this.keyboardControlScheme.Add(Keys.A, Controls.Left);
+                    this.keyboardControlScheme.Add(Keys.D, Controls.Right);
+                    this.keyboardControlScheme.Add(Keys.Escape, Controls.Exit);
+                    this.keyboardControlScheme.Add(Keys.Z, Controls.SpeedUp);
+                    break;
                 case ControllerType.Xbox360:
                     this.xbox360ControlScheme = new Dictionary<Buttons, Controls>();
                     this.xbox360ControlScheme.Add(Buttons.DPadUp, Controls.Up);
@@ -43,6 +52,7 @@ namespace cruisin_asu.Helpers {
                     this.xbox360ControlScheme.Add(Buttons.DPadLeft, Controls.Left);
                     this.xbox360ControlScheme.Add(Buttons.DPadRight, Controls.Right);
                     this.xbox360ControlScheme.Add(Buttons.Back, Controls.Exit);
+                    this.xbox360ControlScheme.Add(Buttons.RightTrigger, Controls.SpeedUp);
                     break;
             }
 
@@ -58,6 +68,9 @@ namespace cruisin_asu.Helpers {
         public void Update(GameTime gameTime) {
             switch (controllerType) {
                 case ControllerType.PC:
+                    this.KeyboardUpdate();
+                    break;
+                case ControllerType.PC2:
                     this.KeyboardUpdate();
                     break;
                 case ControllerType.SilverLight:

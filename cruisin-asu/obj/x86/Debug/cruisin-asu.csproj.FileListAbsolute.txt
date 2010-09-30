@@ -7,3 +7,12 @@ C:\Users\Public\Documents\cruisin-asu\cruisin-asu\obj\x86\Debug\ResolveAssemblyR
 C:\Users\Public\Documents\cruisin-asu\cruisin-asu\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Public\Documents\cruisin-asu\cruisin-asu\obj\x86\Debug\cruisin-asu.exe
 C:\Users\Public\Documents\cruisin-asu\cruisin-asu\obj\x86\Debug\cruisin-asu.pdb
+C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\bin\x86\Debug\Content\player.xnb
+C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\bin\x86\Debug\Content\map.xnb
+C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\bin\x86\Debug\Content\realmap.xnb
+C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\bin\x86\Debug\cruisin-asu.exe
+C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\bin\x86\Debug\cruisin-asu.pdb
+C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\obj\x86\Debug\cruisin-asu.exe
+C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\obj\x86\Debug\cruisin-asu.pdb

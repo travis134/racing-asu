@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Public\Documents\cruisin-asu\cruisin-asu\bin\x86\Debug\Content\player.xnb</Output>
-      <Time>2010-09-27T22:54:03.7163482-07:00</Time>
+      <Output>C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\bin\x86\Debug\Content\player.xnb</Output>
+      <Time>2010-09-29T17:20:31.3030189-07:00</Time>
     </Item>
     <Item>
       <Source>map.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Public\Documents\cruisin-asu\cruisin-asu\bin\x86\Debug\Content\map.xnb</Output>
-      <Time>2010-09-27T22:54:03.7153481-07:00</Time>
+      <Output>C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\bin\x86\Debug\Content\map.xnb</Output>
+      <Time>2010-09-29T17:20:31.2930183-07:00</Time>
     </Item>
     <Item>
       <Source>realmap.png</Source>
@@ -25,47 +25,47 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Public\Documents\cruisin-asu\cruisin-asu\bin\x86\Debug\Content\realmap.xnb</Output>
-      <Time>2010-09-27T22:54:03.74735-07:00</Time>
+      <Output>C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\bin\x86\Debug\Content\realmap.xnb</Output>
+      <Time>2010-09-29T17:20:31.3290204-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Public\Documents\cruisin-asu\cruisin-asu\Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Public\Documents\cruisin-asu\cruisin-asu\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Public\Documents\cruisin-asu\cruisin-asu\Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Public\Documents\cruisin-asu\cruisin-asu\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Patrick Traynor\Documents\ASURacing\cruisin-asu\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
         <Value>2009-05-28T00:16:14-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
         <Value>2009-05-28T00:16:06-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
         <Value>2009-05-28T00:16:16-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
         <Value>2009-05-28T00:16:26-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
         <Value>2009-05-28T00:16:12-07:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
         <Value>2009-05-28T00:16:06-07:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\3.1.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2010-08-20T21:55:44.2419481-07:00</Value>
+        <Value>2010-09-08T21:54:36.6487135-07:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
