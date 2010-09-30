@@ -8,7 +8,7 @@ simply means whatever the terminal says, you only type what is after that mark.
 * $ mkdir 'racing-asu'
 * $ cd 'racing-asu'
 * $ git init
-* $ git add remote origin git@github.com:travis134/racing-asu.git
+* $ git remote add origin git@github.com:travis134/racing-asu.git
 * Note: If you are using a branch, change the location of the repository to its corresponding link on github.
 * $ git pull origin master
 
