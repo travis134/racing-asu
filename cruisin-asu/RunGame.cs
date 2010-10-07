@@ -1,7 +1,7 @@
 using System;
 
 namespace cruisin_asu {
-    static class Main {
+    static class RunGame {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
