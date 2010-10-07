@@ -15,7 +15,7 @@ using cruisin_asu.GameObjects;
 
 namespace cruisin_asu {
 
-    public class Game1: Microsoft.Xna.Framework.Game {
+    public class Game: Microsoft.Xna.Framework.Game {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Controller controller2;
@@ -24,9 +24,10 @@ namespace cruisin_asu {
         PlayerGameObject player2;
         GameObject map;
         GameObject realMap;
+        
 
 
-        public Game1() {
+        public Game() {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
@@ -49,7 +50,6 @@ namespace cruisin_asu {
 
             player2 = new PlayerGameObject("player", new Vector2(120, 120), controller2);
             player2.zindex = 0.9f;
-            
 
             map = new GameObject("map", new Vector2(graphics.GraphicsDevice.Viewport.Width / 2, graphics.GraphicsDevice.Viewport.Height / 2));
             map.zindex = 0.2f;
@@ -102,6 +102,8 @@ namespace cruisin_asu {
             if (controller.controlState[Controls.Exit]) {
                 this.Exit();
             }
+
+            Console.Out.WriteLine(Map.VectorToPoint(player.position).ToString());
 
             base.Update(gameTime);
         }

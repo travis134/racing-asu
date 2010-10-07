@@ -90,6 +90,8 @@
     <Compile Include="Helpers\Controller.cs" />
     <Compile Include="Helpers\ControllerType.cs" />
     <Compile Include="Helpers\Controls.cs" />
+    <Compile Include="Map\Layer.cs" />
+    <Compile Include="Map\Map.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />

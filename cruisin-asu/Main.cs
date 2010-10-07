@@ -1,12 +1,12 @@
 using System;
 
 namespace cruisin_asu {
-    static class Program {
+    static class Main {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         static void Main(string[] args) {
-            using (Game1 game = new Game1()) {
+            using (Game game = new Game()) {
                 game.Run();
             }
         }
