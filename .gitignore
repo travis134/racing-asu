@@ -1,3 +1,5 @@
 *.suo
 *ContentPipeline.xml
 *.FileListAbsolute.txt
+*/bin/
+*/obj/
