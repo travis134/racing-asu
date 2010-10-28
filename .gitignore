@@ -1,5 +1,13 @@
+cruisin-asu/bin
+cruisin-asu/obj
+[Bb]in/
+[Oo]bj/
+!/lib
+*.user
 *.suo
-*ContentPipeline.xml
-*.FileListAbsolute.txt
-*/bin/
-*/obj/
+_ReSharper.*
+*.sln.cache
+*.xap
+*.vspcc
+*.vscc
+*.vssscc
