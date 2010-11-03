@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Casey\Scripts\racing-asu\cruisin-asu\bin\x86\Debug\Content\player.xnb</Output>
+      <Output>C:\Users\Casey\Scripts\cruisin-asu\cruisin-asu\bin\x86\Debug\Content\player.xnb</Output>
       <Time>2010-09-29T17:18:16.8201735-07:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Casey\Scripts\racing-asu\cruisin-asu\bin\x86\Debug\Content\map.xnb</Output>
+      <Output>C:\Users\Casey\Scripts\cruisin-asu\cruisin-asu\bin\x86\Debug\Content\map.xnb</Output>
       <Time>2010-09-29T17:18:16.8045735-07:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Casey\Scripts\racing-asu\cruisin-asu\bin\x86\Debug\Content\realmap.xnb</Output>
+      <Output>C:\Users\Casey\Scripts\cruisin-asu\cruisin-asu\bin\x86\Debug\Content\realmap.xnb</Output>
       <Time>2010-09-29T17:18:16.8513735-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -33,10 +33,10 @@
       <TargetPlatform>Windows</TargetPlatform>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Casey\Scripts\racing-asu\cruisin-asu\Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Casey\Scripts\racing-asu\cruisin-asu\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Casey\Scripts\racing-asu\cruisin-asu\Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Casey\Scripts\racing-asu\cruisin-asu\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Casey\Scripts\cruisin-asu\cruisin-asu\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Casey\Scripts\cruisin-asu\cruisin-asu\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Casey\Scripts\cruisin-asu\cruisin-asu\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Casey\Scripts\cruisin-asu\cruisin-asu\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

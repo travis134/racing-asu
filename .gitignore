@@ -1,7 +1,11 @@
 cruisin-asu/bin
 cruisin-asu/obj
+cruisin-asu/obj/*
+cruisin-asu/bin/*
 [Bb]in/
 [Oo]bj/
+[Bb]in/*
+[Oo]bj/*
 !/lib
 *.user
 *.suo

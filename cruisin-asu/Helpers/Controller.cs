@@ -43,7 +43,7 @@ namespace cruisin_asu.Helpers {
                     this.keyboardControlScheme.Add(Keys.A, Controls.Left);
                     this.keyboardControlScheme.Add(Keys.D, Controls.Right);
                     this.keyboardControlScheme.Add(Keys.Escape, Controls.Exit);
-                    this.keyboardControlScheme.Add(Keys.Z, Controls.SpeedUp);
+                    this.keyboardControlScheme.Add(Keys.LeftShift, Controls.SpeedUp);
                     break;
                 case ControllerType.Xbox360:
                     this.xbox360ControlScheme = new Dictionary<Buttons, Controls>();

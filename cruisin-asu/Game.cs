@@ -103,7 +103,7 @@ namespace cruisin_asu {
                 this.Exit();
             }
 
-            Console.Out.WriteLine(Map.VectorToPoint(player.position).ToString());
+            Console.Out.WriteLine(Map.Map.VectorToPoint(player.position).ToString());
 
             base.Update(gameTime);
         }

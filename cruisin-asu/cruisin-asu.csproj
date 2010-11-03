@@ -90,6 +90,7 @@
     <Compile Include="Helpers\Controller.cs" />
     <Compile Include="Helpers\ControllerType.cs" />
     <Compile Include="Helpers\Controls.cs" />
+    <Compile Include="Map\Tile.cs" />
     <Compile Include="Map\Layer.cs" />
     <Compile Include="Map\Map.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,6 +98,9 @@
     <Compile Include="Game.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\map.png" />
+    <Content Include="Content\player.png" />
+    <Content Include="Content\realmap.png" />
     <Content Include="Game.ico" />
     <Content Include="GameThumbnail.png" />
   </ItemGroup>
@@ -142,6 +146,9 @@
       <ProductName>Microsoft XNA Framework Redistributable 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Content.contentproj" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
