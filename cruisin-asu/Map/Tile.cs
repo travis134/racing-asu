@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 
 namespace cruisin_asu.Map {
-    public enum Tile {
-        BUILDING,
-        GRASS,
-        SIDEWALK,
-        ROAD
-    };
+    class Tile {
+        public bool pathable;
+        public TileType type;
+
+        public Tile(bool pathable, TileType type) {
+            this.pathable = pathable;
+            this.type = type;
+        }
+    }
 }

@@ -25,7 +25,36 @@ namespace cruisin_asu.Map {
 
         public bool IsPathable(Vector2 position) {
             Point where = Map.VectorToPoint(position);
-            return !(MapInfo[0].LayerInfo[where.X][where.Y] == Tile.BUILDING);
+            if (where.X <= MapInfo[0].LayerInfo.Length && where.Y <= MapInfo[0].LayerInfo[0].Length) {
+                return (MapInfo[0].LayerInfo[where.X][where.Y].pathable);
+            } else {
+                return false;
+            }
+        }
+
+        public bool IsPathable(Point position) {
+            if (position.X <= MapInfo[0].LayerInfo.Length && position.Y <= MapInfo[0].LayerInfo[0].Length) {
+                return (MapInfo[0].LayerInfo[position.X][position.Y].pathable);
+            } else {
+                return false;
+            }
+        }
+
+        public TileType GetTileType(Vector2 position) {
+            Point where = Map.VectorToPoint(position);
+            if (where.X <= MapInfo[0].LayerInfo.Length && where.Y <= MapInfo[0].LayerInfo[0].Length) {
+                return MapInfo[0].LayerInfo[where.X][where.Y].type;
+            } else {
+                return TileType.WHOKNOWS;
+            }
+        }
+
+        public TileType GetTileType(Point position) {
+            if (position.X <= MapInfo[0].LayerInfo.Length && position.Y <= MapInfo[0].LayerInfo[0].Length) {
+                return MapInfo[0].LayerInfo[position.X][position.Y].type;
+            } else {
+                return TileType.WHOKNOWS;
+            }
         }
 
         public static Point VectorToPoint(Vector2 position) {

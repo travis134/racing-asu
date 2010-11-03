@@ -90,6 +90,7 @@
     <Compile Include="Helpers\Controller.cs" />
     <Compile Include="Helpers\ControllerType.cs" />
     <Compile Include="Helpers\Controls.cs" />
+    <Compile Include="Map\TileType.cs" />
     <Compile Include="Map\Tile.cs" />
     <Compile Include="Map\Layer.cs" />
     <Compile Include="Map\Map.cs" />

@@ -12,6 +12,7 @@ using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
 using cruisin_asu.Helpers;
 using cruisin_asu.GameObjects;
+using cruisin_asu.Map;
 
 namespace cruisin_asu {
 
